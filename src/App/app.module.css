@@ -1,0 +1,22 @@
+.container {
+    min-height: 100vh;
+    min-width: 1350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(142,202,230);
+    background: linear-gradient(0deg, rgba(142,202,230,1) 0%, rgba(255,183,3,0.5214460784313726) 100%);
+}
+
+.convert_container {
+    margin-top: 40px;
+}
+
+.table_container {
+    width: 1040px;
+    min-height: 500px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: rgb(35 55 80 / 30%) 0px 6px 12px;
+    margin-top: 50px;
+}

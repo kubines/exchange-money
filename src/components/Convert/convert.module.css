@@ -1,0 +1,34 @@
+.container {
+    width: 1040px;
+    height: 152px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: rgb(35 55 80 / 30%) 0px 6px 12px;
+    padding: 20px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrows {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #8ECAE6;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.arrows:hover {
+    background-color: #219EBC;
+}
+
+.convertValue {
+    margin-top: 20px;
+    font-size: 40px;
+}
