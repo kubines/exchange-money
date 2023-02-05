@@ -15,6 +15,7 @@ export const initialState: InitialState = {
   table: {
     list: exchangesTableAdapter.getInitialState(),
     baseCurrency: 'USD',
+    sortBy: null,
     meta: {
       loading: false,
       loaded: false,
@@ -58,7 +59,9 @@ export const exchanges = createSlice({
   name: 'exchanges',
   initialState,
   reducers: {
-
+    sortTable: (state, { payload }) => {
+      state.table.sortBy = payload
+    }
   },
   extraReducers: (builder) => {
     builder
@@ -111,4 +114,5 @@ export const exchanges = createSlice({
   }
 })
 
+export const { sortTable } = exchanges.actions
 export default exchanges.reducer

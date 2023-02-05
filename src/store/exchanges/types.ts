@@ -14,6 +14,7 @@ export interface InitialState {
   table: {
     baseCurrency: string
     list: List
+    sortBy: null | 'asc' | 'desc'
     meta: {
       loading: boolean
       loaded: boolean

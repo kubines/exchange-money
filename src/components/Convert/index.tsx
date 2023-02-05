@@ -51,7 +51,7 @@ export function Convert (): ReactElement {
         />
       </div>
       <div className={styles.convertValue}>
-        {`${(numMoney * Number(convertCurrency?.value)).toFixed(2)} ${firstSelect}`}
+        {!loading && `${(numMoney * Number(convertCurrency?.value)).toFixed(2)} ${firstSelect}`}
       </div>
     </div>
     </Loader>
